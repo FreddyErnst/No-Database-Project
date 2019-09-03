@@ -61,7 +61,6 @@ class Emotes extends Component {
         return (
             <main className="container">
                 {this.state.emotes.map((element, index) => {
-                    console.log(element.img)
                     return (
                         <EmotesCard
                         img={element.img}

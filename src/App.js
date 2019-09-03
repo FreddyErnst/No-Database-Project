@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import './components/Footer.css'
 
 
+
 class App extends React.Component  {
   constructor() {
     super()
@@ -33,7 +34,7 @@ class App extends React.Component  {
     
     <div>
       <Header/>
-      <Search emote={emote}/>
+      <Search/>
       <AddEmotes updateEmotes={updateEmotes}/>
       <Emotes emote={emote}/>
       <Footer/>

@@ -22,7 +22,7 @@ class Search extends Component {
     render() {
         return (
             <div className="SearchBox">
-                 <input onChange = {this.handleChange}
+                <input onChange = {this.handleChange}
                 placeholder="Search emote..."
                 
                 
