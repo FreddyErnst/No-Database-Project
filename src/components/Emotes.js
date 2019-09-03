@@ -62,7 +62,9 @@ class Emotes extends Component {
             <main className="container">
                 {this.state.emotes.map((element, index) => {
                     return (
+                        
                         <EmotesCard
+                        key={index}
                         img={element.img}
                         name={element.name}
                         description={element.description}
