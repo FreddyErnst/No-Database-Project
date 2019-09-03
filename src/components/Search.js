@@ -1,4 +1,4 @@
-// This component isnt being used, please don't consider when grading the project. Leaving it here so I can work on it after. //
+// This component is not being used, please don't consider when grading the project. Leaving it here so I can work on it after. //
 
 import React, {Component} from 'react'
 import './Search.css'
