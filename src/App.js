@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header'
+import './components/Header.css'
+import Search from './components/Search'
+import './components/Search.css'
+import AddEmotes from './components/AddEmotes'
+import './components/AddEmotes.css'
+import Emotes from './components/Emotes'
+import './components/Emotes.css'
+import Footer from './components/Footer'
+import './components/Footer.css'
 
-function App() {
+
+class App extends React.Component  {
+  constructor() {
+    super()
+    this.state = {
+      emote: {}
+    }
+    this.updateEmotes = this.updateEmotes.bind(this)
+  }
+  updateEmotes (obj) {
+    this.setState ({
+      emote: obj
+    })
+  }
+
+
+
+  render () {
+    const {updateEmotes, emote} = this.state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+      <Header/>
+      <Search emote={emote}/>
+      <AddEmotes updateEmotes={updateEmotes}/>
+      <Emotes emote={emote}/>
+      <Footer/>
+      
+
     </div>
   );
+  }
 }
 
 export default App;

@@ -1,0 +1,17 @@
+.header-style {
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://wallpaperplay.com/walls/full/d/9/9/6404.jpg);
+    background-size: 100% 130%;
+
+}
+
+.Title {
+    color: black;
+
+}
+

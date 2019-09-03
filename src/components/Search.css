@@ -1,0 +1,15 @@
+.SearchBox {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.Hackerman {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    border: none;
+    cursor: pointer;
+}
+
